@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="clicker">Click me</button>
+    <script>
+      window.clicks = 0;
+      var button = document.getElementById('clicker');
+      button.addEventListener('click', function () {
+        window.clicks++;
+      })
+    </script>
+  </body>
+</html>
