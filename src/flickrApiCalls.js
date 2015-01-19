@@ -8,11 +8,11 @@ function getFlickrSetID (url)
 }
 
 function getFlickrSetPhotos(id, apiMethod, apiKey){
-    var flickrAPI = "";
-    flickrAPI += "https://api.flickr.com/services/rest/?";
+    var flickrAPI = '';
+    flickrAPI += 'https://api.flickr.com/services/rest/?';
     flickrAPI += '&method="' + apiMethod+'"';
     flickrAPI += '&api_key="' +apiKey +'"' ;
-    flickrAPI += "&format=json";
+    flickrAPI += '&format=json';
     var xhr= new XMLHttpRequest();
     xhr.open("GET",flickrAPI,true);   //
     xhr.send();
