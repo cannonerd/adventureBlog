@@ -12,9 +12,9 @@ module.exports = function(grunt) {
                     'http://localhost:8000/spec/runner.html'
                 ]
             },
-            all: ['spec/runner.html']
-
-
+            all:{
+                options:{
+                    urls: ['spec/runner.html']}}
         },
         connect: {
             server: {
