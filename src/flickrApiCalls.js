@@ -14,6 +14,7 @@ function getFlickrSetPhotos(setId, apiMethod, apiKey){
     flickrAPI += '&api_key=' +apiKey  ;
     flickrAPI += '&photoset_id=' +setId  ;
     flickrAPI += '&format=json';
+    flickrAPI += '&nojsoncallback=1';
     return  flickrAPI;
     var xhr= new XMLHttpRequest();
     xhr.open("GET",flickrAPI,true);   //
