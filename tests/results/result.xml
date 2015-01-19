@@ -1,49 +1,19 @@
-<testsuite name="Mocha Tests" tests="5" failures="3" errors="3" skipped="0" timestamp="Mon, 19 Jan 2015 10:53:00 GMT" time="0.116">
-<testcase classname="timestamp handling correcting timestamps to baseline" name="Should keep correct timestamps as they are" time="0"><failure><![CDATA[Times don't match
-Error: Times don't match
-    at http://localhost:8000/spec/test.timestamps.js:12
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at n (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at e (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:1)]]></failure></testcase>
-<testcase classname="timestamp handling correcting timestamps to baseline" name="Should alter the timestamps by negative hour" time="0.001"><failure><![CDATA[expected NaN to equal NaN
-AssertionError: expected NaN to equal NaN
-    at https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1
-    at s (https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1)
-    at https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1
-    at http://localhost:8000/spec/test.timestamps.js:21
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at n (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at e (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:1)]]></failure></testcase>
-<testcase classname="timestamp handling correcting timestamps to baseline" name="Should alter the timestamps by a positive hour" time="0"><failure><![CDATA[expected NaN to equal NaN
-AssertionError: expected NaN to equal NaN
-    at https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1
-    at s (https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1)
-    at https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1
-    at http://localhost:8000/spec/test.timestamps.js:29
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at n (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at e (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:1)]]></failure></testcase>
-<testcase classname="Clicker App Initially" name="should have zero clicks" time="0.002"/>
-<testcase classname="Clicker App Initially" name="should increment clicks when clicked" time="0"/>
-</testsuite>
+
+[0m[0m
+[0m  timestamp handling[0m
+[0m    correcting timestamps to baseline[0m
+[2K[0G    [32m  ✓[0m[90m Should keep correct timestamps as they are [0m
+[2K[0G    [32m  ✓[0m[90m Should alter the timestamps by negative hour [0m
+[2K[0G    [32m  ✓[0m[90m Should alter the timestamps by a positive hour [0m
+
+[0m  Clicker App[0m
+[0m    Initially[0m
+[2K[0G    [32m  ✓[0m[90m should have zero clicks [0m
+[2K[0G    [32m  ✓[0m[90m should increment clicks when clicked [0m
+
+
+[92m [0m[32m 5 passing[0m[90m (123ms)[0m
+
 Unsafe JavaScript attempt to access frame with URL about:blank from frame with URL file:///home/cannonerd/privateProjects/adventureBlog/node_modules/grunt-mocha-phantomjs/node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee. Domains, protocols and ports must match.
 
 Unsafe JavaScript attempt to access frame with URL about:blank from frame with URL file:///home/cannonerd/privateProjects/adventureBlog/node_modules/grunt-mocha-phantomjs/node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee. Domains, protocols and ports must match.
@@ -53,52 +23,22 @@ Unsafe JavaScript attempt to access frame with URL about:blank from frame with U
 Failed to start mocha: Init timeout
 Unsafe JavaScript attempt to access frame with URL about:blank from frame with URL file:///home/cannonerd/privateProjects/adventureBlog/node_modules/grunt-mocha-phantomjs/node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee. Domains, protocols and ports must match.
 
-<testsuite name="Mocha Tests" tests="5" failures="3" errors="3" skipped="0" timestamp="Mon, 19 Jan 2015 10:53:07 GMT" time="0.114">
-<testcase classname="timestamp handling correcting timestamps to baseline" name="Should keep correct timestamps as they are" time="0.001"><failure><![CDATA[Times don't match
-Error: Times don't match
-    at file:///home/cannonerd/privateProjects/adventureBlog/spec/test.timestamps.js:12
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at n (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at e (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:1)]]></failure></testcase>
-<testcase classname="timestamp handling correcting timestamps to baseline" name="Should alter the timestamps by negative hour" time="0.001"><failure><![CDATA[expected NaN to equal NaN
-AssertionError: expected NaN to equal NaN
-    at https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1
-    at s (https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1)
-    at https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1
-    at file:///home/cannonerd/privateProjects/adventureBlog/spec/test.timestamps.js:21
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at n (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at e (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:1)]]></failure></testcase>
-<testcase classname="timestamp handling correcting timestamps to baseline" name="Should alter the timestamps by a positive hour" time="0"><failure><![CDATA[expected NaN to equal NaN
-AssertionError: expected NaN to equal NaN
-    at https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1
-    at s (https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1)
-    at https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js:1
-    at file:///home/cannonerd/privateProjects/adventureBlog/spec/test.timestamps.js:29
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at r (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at n (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2)
-    at https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:2
-    at e (https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.min.js:1)]]></failure></testcase>
-<testcase classname="Clicker App Initially" name="should have zero clicks" time="0.002"/>
-<testcase classname="Clicker App Initially" name="should increment clicks when clicked" time="0"/>
-</testsuite>
+
+[0m[0m
+[0m  timestamp handling[0m
+[0m    correcting timestamps to baseline[0m
+[2K[0G    [32m  ✓[0m[90m Should keep correct timestamps as they are [0m
+[2K[0G    [32m  ✓[0m[90m Should alter the timestamps by negative hour [0m
+[2K[0G    [32m  ✓[0m[90m Should alter the timestamps by a positive hour [0m
+
+[0m  Clicker App[0m
+[0m    Initially[0m
+[2K[0G    [32m  ✓[0m[90m should have zero clicks [0m
+[2K[0G    [32m  ✓[0m[90m should increment clicks when clicked [0m
+
+
+[92m [0m[32m 5 passing[0m[90m (120ms)[0m
+
 Unsafe JavaScript attempt to access frame with URL about:blank from frame with URL file:///home/cannonerd/privateProjects/adventureBlog/node_modules/grunt-mocha-phantomjs/node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee. Domains, protocols and ports must match.
 
 Unsafe JavaScript attempt to access frame with URL about:blank from frame with URL file:///home/cannonerd/privateProjects/adventureBlog/node_modules/grunt-mocha-phantomjs/node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee. Domains, protocols and ports must match.

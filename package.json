@@ -1,6 +1,9 @@
 {
   "name": "adventure-blog",
   "version": "0.1.0",
+  "scripts": {
+      "test": "grunt test"
+  },
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-mocha-phantomjs": "~0.6.0",

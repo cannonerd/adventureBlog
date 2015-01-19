@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     mocha_phantomjs: {
     options: {
-      'reporter': 'xunit',
+      'reporter': 'spec',
       'output': 'tests/results/result.xml',
       urls: [
           'http://localhost:8000/spec/runner.html',
