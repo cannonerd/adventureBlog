@@ -9,8 +9,7 @@ module.exports = function(grunt) {
                 'reporter': 'spec',
                 'output': 'tests/results/result.xml',
                 urls: [
-                    'http://localhost:8000/spec/runner.html',
-                    'http://localhost:8000/src/clicker.html'
+                    'http://localhost:8000/spec/runner.html'
                 ]
             },
             all: ['spec/runner.html']
