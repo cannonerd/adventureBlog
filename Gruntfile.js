@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 //make sure that all the necessary tasks are also defined in
 //the dependencies in package.json
     grunt.loadNpmTasks('grunt-contrib-connect');
-    this.registerTask('test', ['connect', 'mocha_phantomjs']);
+    this.registerTask('test', ['jshint','connect', 'mocha_phantomjs']);
     grunt.loadNpmTasks('grunt-mocha-phantomjs');
     grunt.loadNpmTasks('grunt-contrib-jshint');
 
