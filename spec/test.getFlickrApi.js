@@ -12,5 +12,24 @@ describe("getting flickr api", function(){
             var url = "https://www.flickr.com/photos/ihmis-suski/sets/72157649813813025/";
             chai.expect(getFlickrSetID(url)).to.equal('72157649813813025');
         });
+        //getFlickrSetPhotos
+
+        it("gets response from Flickr flickr.photosets.getPhotos", function(){
+            var setId = "72157649813813025";
+            var apiMethod= "flickr.photosets.getPhotos";
+            var apiKey= "8d156cde97fe02e2f4a22324fd761996";
+
+            chai.expect(getFlickrSetPhotos(setId, apiMethod, apiKey)).not.to.be.empty;
+        });
+
+        it("gets response from Flickr flickr.photosets.getPhotos", function(){
+            var setId = "72157649813813025";
+            var apiMethod= "flickr.photosets.getPhotos";
+            var apiKey= "8d156cde97fe02e2f4a22324fd761996";
+
+            chai.expect(getFlickrSetPhotos(setId, apiMethod, apiKey)).to.be.empty;
+        });
+
+
     })
 });

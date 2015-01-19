@@ -6,3 +6,14 @@ function getFlickrSetID (url)
     }
     return setNumber;
 }
+
+function getFlickrSetPhotos(id, apiMethod, apiKey){
+    var flickrAPI = "";
+    flickrAPI += "https://api.flickr.com/services/rest/?";
+    flickrAPI += '&method="' + apiMethod+'"';
+    flickrAPI += '&api_key="' +apiKey +'"' ;
+    flickrAPI += "&format=json";
+    return flickrAPI;
+    
+
+}
