@@ -25,7 +25,7 @@ describe("timestamp handling", function(){
 
     it("Should alter the timestamps by a positive hour", function(){
       var time = new Date("2014-11-21T14:05:12Z");
-      var corrected = correctTimestamp(time, 60);
+      var corrected = correctTimestamp(time, -60);
       chai.expect(corrected.getTime()).to.equal(time.getTime()+60*60*1000);
 
 
