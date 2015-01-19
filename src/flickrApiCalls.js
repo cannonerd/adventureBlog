@@ -7,17 +7,17 @@ function getFlickrSetID (url)
     return setNumber;
 }
 
-function getFlickrSetPhotos(setId, apiMethod, apiKey){
+function getFlickrSetPhotos(setId, apiMethod, apiKey, callback){
     var flickrAPI = '';
     flickrAPI += 'https://api.flickr.com/services/rest/?';
     flickrAPI += '&method=' + apiMethod;
-    flickrAPI += '&api_key=' +apiKey  ;
-    flickrAPI += '&photoset_id=' +setId  ;
+    flickrAPI += '&api_key=' +apiKey ;
+    flickrAPI += '&photoset_id=' +setId;
     flickrAPI += '&format=json';
     flickrAPI += '&nojsoncallback=1';
-    return  flickrAPI;
+
     var xhr= new XMLHttpRequest();
-    xhr.open("GET",flickrAPI,true);   //
+    xhr.open("GET",flickrAPI,true);
     xhr.send();
     xhr.onreadystatechange=function(){
         if (xhr.readyState !== 4) {

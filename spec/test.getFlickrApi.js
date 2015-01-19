@@ -18,17 +18,11 @@ describe("getting flickr api", function(){
             var setId = "72157649813813025";
             var apiMethod= "flickr.photosets.getPhotos";
             var apiKey= "8d156cde97fe02e2f4a22324fd761996";
-
-            getFlickrSetPhotos(setId, apiMethod, apiKey, done);
+            getFlickrSetPhotos(setId, apiMethod, apiKey, function(){
+                done();
+            } );
         });
-        it('should take less than 10000ms', function(done){
-            this.timeout(10000);
-            var setId = "72157649813813025";
-            var apiMethod= "flickr.photosets.getPhotos";
-            var apiKey= "8d156cde97fe02e2f4a22324fd761996";
-
-            getFlickrSetPhotos(setId, apiMethod, apiKey, done);
-        })
+       
 
 
     })
