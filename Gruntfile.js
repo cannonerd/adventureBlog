@@ -8,7 +8,7 @@ module.exports = function(grunt) {
       'reporter': 'xunit',
       'output': 'tests/results/result.xml'
     },
-    all: ['runner.html']
+    all: ['spec/runner.html']
   }
   });
 
