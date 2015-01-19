@@ -13,15 +13,19 @@ function getFlickrSetPhotos(setId, apiMethod, apiKey){
     flickrAPI += '&method=' + apiMethod;
     flickrAPI += '&api_key=' +apiKey  ;
     flickrAPI += '&photoset_id=' +setId  ;
-    //photoset_id
     flickrAPI += '&format=json';
     return  flickrAPI;
     var xhr= new XMLHttpRequest();
     xhr.open("GET",flickrAPI,true);   //
     xhr.send();
     xhr.onreadystatechange=function(){
-
-        return xhr;
+        if (xhr.readyState !== 4) {
+            // Not complete yet
+            return;
+        }
+        var data = JSON.parse(xhr.responseText);
+        // Send data to callback. Note: XHR is asynchronous
+        callback(data);
     };
 
 

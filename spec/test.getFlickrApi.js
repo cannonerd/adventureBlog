@@ -14,21 +14,14 @@ describe("getting flickr api", function(){
         });
         //getFlickrSetPhotos
 
-        it("gets response from Flickr flickr.photosets.getPhotos", function(){
+        it("gets response from Flickr flickr.photosets.getPhotos", function(done){
             var setId = "72157649813813025";
             var apiMethod= "flickr.photosets.getPhotos";
             var apiKey= "8d156cde97fe02e2f4a22324fd761996";
 
-            chai.expect(getFlickrSetPhotos(setId, apiMethod, apiKey)).not.to.be.empty;
+            getFlickrSetPhotos(setId, apiMethod, apiKey, done);
         });
 
-        it("gets response from Flickr flickr.photosets.getPhotos", function(){
-            var setId = "72157649813813025";
-            var apiMethod= "flickr.photosets.getPhotos";
-            var apiKey= "8d156cde97fe02e2f4a22324fd761996";
-
-            chai.expect(getFlickrSetPhotos(setId, apiMethod, apiKey)).to.be.empty;
-        });
 
 
     })
