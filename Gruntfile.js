@@ -12,21 +12,24 @@ module.exports = function(grunt) {
           'http://localhost:8000/src/clicker.html'
         ]
     },
-    all: ['spec/runner.html'],
+    all: ['spec/runner.html']
+    
+
+  },
     connect: {
       server: {
         options: {
           port: 8000,
-          base: '.',
+          base: '.'
         }
       }
-    }
-  }
+}
   });
 
 //make sure that all the necessary tasks are also defined in
 //the dependencies in package.json
 grunt.loadNpmTasks('grunt-contrib-connect');
+this.registerTask('test', ['connect', 'mocha_phantomjs']);
 grunt.loadNpmTasks('grunt-mocha-phantomjs');
 
 
