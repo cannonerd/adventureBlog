@@ -8,4 +8,4 @@ function correctTimestamp (time, correction)
   var corrected = time.getTime() + correction;
 
   return new Date(corrected);
-};
+}
