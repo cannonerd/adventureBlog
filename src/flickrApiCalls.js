@@ -1,4 +1,8 @@
-function getFlickrSet (url)
+function getFlickrSetID (url)
 {
-    return;
+    var setNumber = url.split('/').pop();
+    if(setNumber === ""){
+        setNumber = url.slice(0, - 1).split('/').pop();
+    }
+    return setNumber;
 }
