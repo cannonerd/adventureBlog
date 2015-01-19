@@ -20,8 +20,12 @@
   <script src="test.timestamps.js"></script>
   <script src="test.clicker.js"></script>
     <script>
-    mocha.checkLeaks();
-    mocha.run();
-  </script>
+      if (window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+      } else {
+        mocha.checkLeaks();
+        mocha.run();
+      }
+    </script>
 </body>
 </html>
