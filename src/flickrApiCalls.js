@@ -7,12 +7,13 @@ function getFlickrSetID (url)
     return setNumber;
 }
 
-function getFlickrSetPhotos(setId, apiMethod, apiKey, callback){
+function getFlickrApi(setId, apiMethod, apiKey, callback)
+{
     var flickrAPI = '';
     flickrAPI += 'https://api.flickr.com/services/rest/?';
     flickrAPI += '&method=' + apiMethod;
     flickrAPI += '&api_key=' +apiKey ;
-    flickrAPI += '&photoset_id=' +setId;
+    flickrAPI += '&' +setId;
     flickrAPI += '&format=json';
     flickrAPI += '&nojsoncallback=1';
 
@@ -28,6 +29,9 @@ function getFlickrSetPhotos(setId, apiMethod, apiKey, callback){
         // Send data to callback. Note: XHR is asynchronous
         callback(data);
     };
-
-
 }
+
+function getTimestampFromSetPhoto (data)
+{
+ return 1;
+};
