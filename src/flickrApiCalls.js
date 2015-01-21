@@ -43,4 +43,4 @@ function getTimestampFromSetPhoto (photoId, apiMethod, apiKey, callback)
         }
         callback(dateForImage);
     });
-};
+}
