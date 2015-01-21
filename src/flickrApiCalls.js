@@ -31,7 +31,16 @@ function getFlickrApi(setId, apiMethod, apiKey, callback)
     };
 }
 
-function getTimestampFromSetPhoto (data)
+function getTimestampFromSetPhoto (photoId, apiMethod, apiKey, callback)
 {
- return 1;
+    getFlickrApi(photoId,apiMethod,apiKey,function(photo){
+        var dateForImage;
+        if(photo.photo.dates.taken === ""){
+            dateForImage  = photo.photo.dateuploaded;
+        }
+        else{
+            dateForImage = photo.photo.dates.taken;
+        }
+        callback(dateForImage);
+    });
 };
